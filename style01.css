@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.685);
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #ffa500;
+  font-family: "Salsa";
+  font-size: 3rem;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #ffa500;
+  padding: 8px;
+  text-transform: uppercase;
+  font-family: "Salsa";
+  margin-top: 10px;
+}
+
+nav {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha */
+  justify-content: center; /* Centraliza os itens no centro */
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white; /* Azul claro para os links */
+  text-decoration: none;
+  padding: 8px; /* Adiciona um espaço ao redor dos links */
+  margin: 3px; /* Adiciona um espaçamento entre os links */
+  border: 2px solid #3498db; /* Adiciona uma borda aos links */
+  border-radius: 5px; /* Adiciona cantos arredondados à borda */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: block; /* Garante que os links ocupem a largura total disponível */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+nav a:hover {
+  flex: 1 1 45%;
+  background-color: #3498db; /* Altera a cor de fundo ao passar o mouse sobre o link */
+  color: #fff; /* Altera a cor do texto para branco ao passar o mouse sobre o link */
+}
+footer p {
+  color: white;
+
+  background-color: #ffa500;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
